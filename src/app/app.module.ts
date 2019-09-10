@@ -8,7 +8,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 
 import { LoginPage } from '../pages/login/login';
-import { SignUpPage } from '../pages/sign-up/sign-up';
+import { SignupPage } from '../pages/signup/signup';
 import { DashboardPage } from '../pages/dashboard/dashboard';
 import { LoginButtonPage } from '../pages/login-button/login-button';
 
@@ -22,7 +22,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     LoginPage,
-    SignUpPage,
+    SignupPage,
     DashboardPage,
     LoginButtonPage
   ],
@@ -37,7 +37,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     HomePage,
     LoginPage,
-    SignUpPage,
+    SignupPage,
     DashboardPage,
     LoginButtonPage
   ],

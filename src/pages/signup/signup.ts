@@ -20,10 +20,10 @@ form:FormGroup;
 submitted=false;
   constructor(public navCtrl: NavController, public navParams: NavParams, private fb:FormBuilder ) {
     this.form=this.fb.group({
-      name:['',Validators.required],
-      email:['',Validators.required],
-      number:['',Validators.required],
-      password:['',Validators.required]
+      name:['',[Validators.required, Validators.minLength(3)]],
+      email:['',[Validators.required, Validators.email]],
+      phonenumber:['',[Validators.required, Validators.minLength(10)]],
+      password:['',[Validators.required, Validators.minLength(6)]]
     });
   }
   isFieldValid(field: string) {
@@ -58,7 +58,6 @@ submitted=false;
   }
   
   onLoggedin() {
-    console.log('hi');
     this.submitted = true;
 
     if (this.form.valid) {
@@ -69,10 +68,6 @@ submitted=false;
     }
   }
 
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SignupPage');
-  }
   
 
 

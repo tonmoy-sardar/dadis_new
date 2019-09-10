@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { SignUpPage } from '../sign-up/sign-up';
+import { SignupPage } from '../signup/signup';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { DashboardPage } from '../dashboard/dashboard';
 import { LoginButtonPage } from '../login-button/login-button';
@@ -50,7 +50,7 @@ export class LoginPage {
     this.navCtrl.setRoot(page);
   }
   signUp() {
-    this.navCtrl.setRoot(SignUpPage);
+    this.navCtrl.setRoot(SignupPage);
   }
   loginButton(){
     this.navCtrl.setRoot(LoginButtonPage);

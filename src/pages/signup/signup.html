@@ -1,76 +1,63 @@
-
 <ion-content padding class="background">
 
+  <div>
+    <div class="section-header">
+      <img src='/assets/imgs/logo1.png' class="logo">
+    </div>
+
+    <div class="section-text">
+      <div>
+        <h6>WELCOME TO</h6>
+      </div>
+      <div>
+        <h2><span>Dadi</span>COLLECTION</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
     <div>
-      <div class="section-header">
-        <img src='/assets/images/logo.png' class="logo">
-      </div>
-  
-      <div class="section-text">
-        <div style="color:lightgray;">
-          <h6>WELCOME TO</h6>
-        </div>
-        <div>
-          <h2 style="color: lightgoldenrodyellow;">DadiCOLLECTION</h2>
-        </div>
-      </div>
+      <h3>SIGN UP</h3>
     </div>
-  
-    <div class="container">
-      <div class="center">
-        <h3 style="color:whitesmoke;">Signup</h3>
-      </div>
-  
-      <div class="margin-center">
-        <form class="form" [formGroup]="form" (ngSubmit)="onLoggedin()">
-  
-          <div class="form-group">
-            <div>
-              <input type="text" [ngClass]="displayFieldCss('name')" formControlName="name"  class="form-control"
-            placeholder="name" id="text-field">
-            </div>
-            <div *ngIf="isFieldValid('name')">
-              <small class="alert alert-danger"><strong>Name is required</strong></small>
-            </div>
-          </div>
-  
-          <div class="form-group">
-            <input type="text" [ngClass]="displayFieldCss('email')" formControlName="email" class="form-control"
-              placeholder="Email" id="text-field">
-            <div *ngIf="isFieldValid('email')">
-              <small class="alert alert-danger"><strong>Email is required</strong></small>
-            </div>
-          </div>
 
-          <div class="form-group">
-              <input type="text" [ngClass]="displayFieldCss('number')" formControlName="number" class="form-control"
-                placeholder="Number" id="text-field">
-              <div *ngIf="isFieldValid('number')">
-                <small class="alert alert-danger"><strong>Number is required</strong></small>
-              </div>
-            </div>
+   
+    <div>
+      <form class="form"  [formGroup]="form" (ngSubmit)="onLoggedin()">
 
-            <div class="form-group">
-                <input type="password" [ngClass]="displayFieldCss('password')" formControlName="password" class="form-control"
-                  placeholder="Password" id="text-field">
-                <div *ngIf="isFieldValid('password')">
-                  <small class="alert alert-danger"><strong>Password is required</strong></small>
-                </div>
-              </div>
-
-          
-  
-          <div class="form-group">
-            <button class="button-field" color="light">Submit</button>
+        <div class="form-group">
+          <div>
+            <input type="text" [ngClass]="displayFieldCss('name')" formControlName="name" class="text-field"
+          placeholder="Name" >
           </div>
-  
-          
-  
+          <div *ngIf="isFieldValid('name')" class="error-msg">Name is required</div>
+         
+        </div>
+
+        <div class="form-group">
+          <input type="text" [ngClass]="displayFieldCss('email')" formControlName="email" class="text-field"
+            placeholder="Email">
+          <div *ngIf="isFieldValid('email')" class="error-msg">Email is required</div>
+        </div>
         
-        </form>
-        <div class="container-fluid" style="display:none;" id="success">
-          <label class="alert alert-success"><strong class="margin-center">Login Success!!</strong></label>
+        <div class="form-group">
+          <input type="text" [ngClass]="displayFieldCss(' phonenumber')" formControlName=" phonenumber" class="text-field"
+            placeholder="Phone  phonenumber">
+          <div *ngIf="isFieldValid(' phonenumber')" class="error-msg">Phone is required</div>
         </div>
+       
+        <div class="form-group">
+          <input type="password" [ngClass]="displayFieldCss('password')" formControlName="password" class="text-field"
+            placeholder="Password">
+          <div *ngIf="isFieldValid('password')" class="error-msg">Password is required</div>
+        </div>
+
+        <div class="form-group">
+          <button class="button-field" color="light">Submit</button>
+        </div>
+      </form>
+      <div class="container-fluid" style="display:none;" id="success">
+        <label class="alert alert-success"><strong class="margin-center">Register Success!!</strong></label>
       </div>
     </div>
-  </ion-content>
+  </div>
+</ion-content>
