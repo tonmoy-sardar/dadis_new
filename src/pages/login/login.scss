@@ -1,0 +1,84 @@
+#section-header{
+    text-align:center;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 240px;
+    background-size: cover;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#section-text{
+    text-align:center;
+    background-size: cover;
+    position: relative;
+    bottom: -40px;
+}
+
+.center{
+    text-align:center;
+    margin-left: 25px;
+    position: relative;
+    bottom: -40px;
+
+}
+
+.margin-center
+{
+    width:300px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.text{
+    position: relative;
+    bottom: -10px;
+}
+
+.form
+{
+
+    width: 300px;
+    padding: 20px;
+
+}
+
+#text-field{
+    position: relative;
+    bottom: -30px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 25px;
+    border-radius: 35px;
+    font-size: 15px;
+    background: rgb(67, 68, 68);
+    border-color: rgb(67, 68, 68);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: whitesmoke !important;
+    opacity: 1; /* Firefox */
+  }
+
+.button-field{
+    position: relative;
+    bottom: -30px;
+    height: 55px;
+    width: 250px;
+    border-radius: 35px;
+}
+
+#div-footer{
+    position: relative;
+    bottom: -40px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#signupCss
+{
+    position: relative;
+    bottom: -60px;
+    text-align: center;
+    color: whitesmoke;
+}
