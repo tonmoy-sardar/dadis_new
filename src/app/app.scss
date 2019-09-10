@@ -14,8 +14,101 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+* {
+    font-family: "gilroy-light";
+}
+
+.fa {
+    font-family: "FontAwesome";
+}
 .background{  
     background-image: url('/assets/imgs/Splash.png');
     background-repeat: no-repeat;
     background-size:cover;
+}
+
+.container 
+{
+    text-align: center;
+    padding-top: 20px;
+    h3{
+        color: #ffffff;
+    }
+    h6{
+        color: #ffffff;
+    }
+} 
+
+.form
+{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.section-header{
+    text-align:center;
+    margin: 0 auto;
+}
+
+.logo
+{
+    height: 240px;
+    width: 240px;
+}
+.section-text{
+    text-align:center;
+    h6{
+        color: #ffffff;
+        font-size: 14px;
+    }
+    h2
+    {
+        color: #ffffff;
+        font-size: 24px;
+        span
+        {
+            color: #AA9365;
+        }
+    }
+}
+
+
+.margin-center
+{
+    width:300px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+
+.text-field{
+    padding: 15px 20px 15px 20px !important;
+    width:300px;
+    border-radius: 35px ;
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #434444;
+    border: 1px solid #434444;
+}
+
+::placeholder {
+    color: #ffffff;
+  }
+
+.button-field{
+
+    height: 50px;
+    width: 300px;
+    border-radius: 35px;
+}
+
+.error-msg {
+    color: #dc3545;
+    font-size: 15px ;
+    text-align: left;
+    padding: 5px 0px 0px 10px;
 }

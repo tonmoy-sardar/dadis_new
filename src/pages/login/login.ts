@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { SignUpPage } from '../sign-up/sign-up';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { DashboardPage } from '../dashboard/dashboard';
+import { LoginButtonPage } from '../login-button/login-button';
 
 /**
  * Generated class for the LoginPage page.
@@ -50,6 +51,9 @@ export class LoginPage {
   }
   signUp() {
     this.navCtrl.setRoot(SignUpPage);
+  }
+  loginButton(){
+    this.navCtrl.setRoot(LoginButtonPage);
   }
 
   onSubmit() {

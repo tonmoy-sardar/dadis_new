@@ -1,59 +1,58 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
     <ion-title>login-page</ion-title>
   </ion-navbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content padding class="background">
 
-  <div class="ion-card">
-    <section id="section-header">
-      <img src='/assets/imgs/logo1.png'>
-    </section>
+  <div>
+    <div class="section-header">
+      <img src='/assets/imgs/logo1.png' class="logo">
+    </div>
 
-    <section id="section-text">
-      <span style="color:lightgray;">
+    <div class="section-text">
+      <div>
         <h6>WELCOME TO</h6>
-      </span>
-      <span>
-        <h2 style="color: lightgoldenrodyellow;">DadiCOLLECTION</h2>
-      </span>
-    </section>
+      </div>
+      <div>
+        <h2><span>Dadi</span>COLLECTION</h2>
+      </div>
+    </div>
   </div>
 
   <div class="container">
-    <div class="center">
-      <h3 style="color:whitesmoke;">LOG IN</h3>
+    <div>
+      <h3>LOG IN</h3>
     </div>
 
-    <div class="margin-center">
-      <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div>
+      <form class="form"  [formGroup]="loginForm" (ngSubmit)="onSubmit()">
 
         <div class="form-group">
-          <input type="text" [ngClass]="displayFieldCss('username')" formControlName="username" class="form-control"
-            placeholder="Username" id="text-field">
-          <section *ngIf="isFieldValid('username')">
-            <small class="alert alert-danger"><strong>Username is required</strong></small>
-          </section>
+          <div>
+            <input type="text" [ngClass]="displayFieldCss('username')" formControlName="username" class="text-field"
+          placeholder="Username" >
+          </div>
+          <div *ngIf="isFieldValid('username')" class="error-msg">Username is required</div>
+         
         </div>
 
         <div class="form-group">
-          <input type="password" [ngClass]="displayFieldCss('password')" formControlName="password" class="form-control"
-            placeholder="Password" id="text-field">
-          <section *ngIf="isFieldValid('password')">
-            <small class="alert alert-danger"><strong>Password is required</strong></small>
-          </section>
+          <input type="password" [ngClass]="displayFieldCss('password')" formControlName="password" class="text-field"
+            placeholder="Password">
+          <div *ngIf="isFieldValid('password')" class="error-msg">Password is required</div>
         </div>
 
         <div class="form-group">
           <button class="button-field" color="light">Submit</button>
         </div>
 
-        <div class="container-fluid" id="div-footer">
+        <div >
           <h6>OR</h6>
         </div>
 
-        <div class="container-fluid" id="signupCss">
+        <div>
           <a href="JavaScript: void(0);" (click)="signUp()">
             <h5 style="color: azure;">Forgot your Password ?</h5>
           </a>
@@ -64,4 +63,8 @@
       </div>
     </div>
   </div>
+
+  <!-- <div>
+    <button (click)="loginButton()"></button>
+  </div> -->
 </ion-content>
