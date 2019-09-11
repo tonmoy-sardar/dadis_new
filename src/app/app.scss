@@ -37,6 +37,31 @@
     h6{
         color: #ffffff;
     }
+    a:link#Register
+    {
+        color: #ffffff;
+        font-size: 18px;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:visited#Register {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:hover#Register
+    {
+        color: #AA9365; 
+        font-size: 18px;
+        background-color: transparent;
+        text-decoration: underline;
+
+    }
+    a:active#Register{
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+    }
 } 
 
 .form
@@ -84,7 +109,7 @@
 
 
 .text-field{
-    padding: 15px 20px 15px 20px !important;
+    padding: 15px 20px 15px 20px;
     width:300px;
     border-radius: 35px ;
     font-size: 15px;
