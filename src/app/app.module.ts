@@ -13,6 +13,7 @@ import { DashboardPage } from '../pages/dashboard/dashboard';
 import { LoginButtonPage } from '../pages/login-button/login-button';
 import { ForgotPasswordPage } from '../pages/forgot-password/forgot-password';
 import { ProductPage } from '../pages/product/product';
+import { ProductDetailPage } from '../pages/product-detail/product-detail';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -28,7 +29,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DashboardPage,
     LoginButtonPage,
     ForgotPasswordPage,
-    ProductPage
+    ProductPage,
+    ProductDetailPage
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DashboardPage,
     LoginButtonPage,
     ForgotPasswordPage,
-    ProductPage
+    ProductPage,
+    ProductDetailPage
   ],
   providers: [
     StatusBar,

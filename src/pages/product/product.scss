@@ -1,3 +1,14 @@
-page-product {
+* {
+    font-family: "gilroy-light";
+}
 
+.fa {
+    font-family: "FontAwesome";
+}
+.banner-icon{  
+    background-image: url('/assets/imgs/banner.png');
+    background-repeat: no-repeat;
+    height: 200px;
+    
+    background-size: cover;
 }
