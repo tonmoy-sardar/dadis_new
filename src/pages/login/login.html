@@ -44,14 +44,21 @@
           <button class="button-field" color="light">Submit</button>
         </div>
 
+        <div>
+          <a href="JavaScript: void(0);" (click)="clickPassword()">
+            <h5 style="color: azure;">Forgot your Password ?</h5>
+          </a>
+        </div>
+
         <div >
           <h6>OR</h6>
         </div>
 
         <div>
-          <a href="JavaScript: void(0);" (click)="signUp()">
-            <h5 style="color: azure;">Forgot your Password ?</h5>
-          </a>
+            <h5 style="color: azure;">Have an Account ? Then</h5>
+            <a href="JavaScript: void(0);" (click)="signUp()" id="Register">
+              Register here.
+            </a>
         </div>
       </form>
       <div class="container-fluid" style="display:none;" id="success">
