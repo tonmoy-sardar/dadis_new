@@ -18,8 +18,13 @@ export class LoginButtonPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginButtonPage');
+  login(page)
+  {
+    this.navCtrl.setRoot(page);
+  }
+  signup(page)
+  {
+    this.navCtrl.setRoot(page);
   }
 
 }
