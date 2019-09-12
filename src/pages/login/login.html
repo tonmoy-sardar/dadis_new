@@ -1,5 +1,3 @@
-
-
 <ion-content padding class="background">
 
   <div>
@@ -23,20 +21,23 @@
     </div>
 
     <div>
-      <form class="form"  [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
 
         <div class="form-group">
           <div>
-            <input type="text" [ngClass]="displayFieldCss('username')" formControlName="username" class="text-field"
-          placeholder="Username" >
-          </div>
+          <input type="text" [ngClass]="displayFieldCss('username')" formControlName="username" class="text-field"
+            placeholder="Username" required>
+            </div>
+
           <div *ngIf="isFieldValid('username')" class="error-msg">Username is required</div>
-         
-        </div>
+          </div>
 
         <div class="form-group">
+          <div>
           <input type="password" [ngClass]="displayFieldCss('password')" formControlName="password" class="text-field"
-            placeholder="Password">
+            placeholder="Password" required>
+            </div>
+            
           <div *ngIf="isFieldValid('password')" class="error-msg">Password is required</div>
         </div>
 
@@ -50,15 +51,15 @@
           </a>
         </div>
 
-        <div >
+        <div>
           <h6>OR</h6>
         </div>
 
         <div>
-            <h5 style="color: azure;">Have an Account ? Then</h5>
-            <a href="JavaScript: void(0);" (click)="signUp()" id="Register">
-              Register here.
-            </a>
+          <h5 style="color: azure;">Have an Account ? Then</h5>
+          <a href="JavaScript: void(0);" (click)="signUp()" id="Register">
+            Register here.
+          </a>
         </div>
       </form>
       <div class="container-fluid" style="display:none;" id="success">
@@ -66,8 +67,4 @@
       </div>
     </div>
   </div>
-
-  <!-- <div>
-    <button (click)="loginButton()"></button>
-  </div> -->
 </ion-content>

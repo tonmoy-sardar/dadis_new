@@ -27,27 +27,27 @@
         <div class="form-group">
           <div>
             <input type="text" [ngClass]="displayFieldCss('name')" formControlName="name" class="text-field"
-          placeholder="Name" >
+          placeholder="Name" required autofocus >
           </div>
           <div *ngIf="isFieldValid('name')" class="error-msg">Name is required</div>
          
         </div>
 
         <div class="form-group">
-          <input type="text" [ngClass]="displayFieldCss('email')" formControlName="email" class="text-field"
-            placeholder="Email">
+          <input type="text" [ngClass]="displayFieldCss('email')" formControlName="email" class="text-field" 
+            placeholder="Email" required autofocus>
           <div *ngIf="isFieldValid('email')" class="error-msg">Email is required</div>
         </div>
         
         <div class="form-group">
-          <input type="text" [ngClass]="displayFieldCss('phonenumber')" formControlName="phonenumber" class="text-field"
-            placeholder="Phone number">
+          <input type="text" [ngClass]="displayFieldCss('phonenumber')" formControlName="phonenumber" class="text-field" 
+            placeholder="Phone number" required>
           <div *ngIf="isFieldValid('phonenumber')" class="error-msg">Phone Number is required</div>
         </div>
        
         <div class="form-group">
-          <input type="password" [ngClass]="displayFieldCss('password')" formControlName="password" class="text-field"
-            placeholder="Password">
+          <input type="password" [ngClass]="displayFieldCss('password')" formControlName="password" class="text-field" 
+            placeholder="Password" required>
           <div *ngIf="isFieldValid('password')" class="error-msg">Password is required</div>
         </div>
 
