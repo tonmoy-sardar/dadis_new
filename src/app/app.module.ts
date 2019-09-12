@@ -14,6 +14,7 @@ import { LoginButtonPage } from '../pages/login-button/login-button';
 import { ForgotPasswordPage } from '../pages/forgot-password/forgot-password';
 import { ProductPage } from '../pages/product/product';
 import { ProductDetailPage } from '../pages/product-detail/product-detail';
+import { CheckOutPage } from '../pages/check-out/check-out';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -30,7 +31,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     LoginButtonPage,
     ForgotPasswordPage,
     ProductPage,
-    ProductDetailPage
+    ProductDetailPage,
+    CheckOutPage
   ],
   imports: [
     BrowserModule,
@@ -48,7 +50,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     LoginButtonPage,
     ForgotPasswordPage,
     ProductPage,
-    ProductDetailPage
+    ProductDetailPage,
+    CheckOutPage
   ],
   providers: [
     StatusBar,
