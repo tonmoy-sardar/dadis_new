@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CartPage } from '../cart/cart';
 
 /**
  * Generated class for the CheckOutPage page.
@@ -19,7 +20,7 @@ export class CheckOutPage {
   }
 
   goToCart(){
-    
+    this.navCtrl.setRoot(CartPage);
   }
 
   ionViewDidLoad() {
