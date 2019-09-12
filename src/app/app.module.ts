@@ -14,11 +14,11 @@ import { LoginButtonPage } from '../pages/login-button/login-button';
 import { ForgotPasswordPage } from '../pages/forgot-password/forgot-password';
 import { ProductPage } from '../pages/product/product';
 import { ProductDetailPage } from '../pages/product-detail/product-detail';
-<<<<<<< HEAD
-import {CartPage} from '../pages/cart/cart';
-=======
+
+import { CartPage } from '../pages/cart/cart';
+
 import { CheckOutPage } from '../pages/check-out/check-out';
->>>>>>> 0abd521eb4ed659afba7d992060035583c79f68e
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -36,11 +36,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ForgotPasswordPage,
     ProductPage,
     ProductDetailPage,
-<<<<<<< HEAD
-    CartPage
-=======
+    CartPage,
     CheckOutPage
->>>>>>> 0abd521eb4ed659afba7d992060035583c79f68e
+
   ],
   imports: [
     BrowserModule,
@@ -59,16 +57,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ForgotPasswordPage,
     ProductPage,
     ProductDetailPage,
-<<<<<<< HEAD
-    CartPage
-=======
+    CartPage,
     CheckOutPage
->>>>>>> 0abd521eb4ed659afba7d992060035583c79f68e
+
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }
