@@ -6,9 +6,37 @@
     font-family: "FontAwesome";
 }
 .banner-icon{  
-    background-image: url('/assets/imgs/banner.png');
     background-repeat: no-repeat;
-    height: 200px;
-    
     background-size: cover;
+    background-color: #000000;
+}
+.nav-color{
+    background-color: #413f3f;
+    h1{
+        text-align: center;
+        color: #ffffff;
+        font-size: 22px;
+    }
+}
+.middle-icon{
+        color: #ebe9ea;
+        background-color: #dda406;
+        padding: 5px 5px 10px 10px;
+        border-radius: 35px;
+        font-size: 14px;
+
+}
+.logo-banner{
+    padding: 5px 5px 10px 10px;
+}
+.logo-field{
+    // background-image: url('/assets/imgs/b1.png');
+    // background-repeat: no-repeat;
+    width: 100px;
+}
+h3{
+    background-color: #615f5f;
+    padding: 5px 5px 10px 10px;
+    color: #ebe9ea;
+    font-size: 18px;
 }
