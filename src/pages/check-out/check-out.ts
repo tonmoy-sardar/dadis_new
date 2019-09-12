@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { CheckOutPage } from '../check-out/check-out';
-
 
 /**
- * Generated class for the ProductPage page.
+ * Generated class for the CheckOutPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,20 +10,20 @@ import { CheckOutPage } from '../check-out/check-out';
 
 @IonicPage()
 @Component({
-  selector: 'page-product',
-  templateUrl: 'product.html',
+  selector: 'page-check-out',
+  templateUrl: 'check-out.html',
 })
-export class ProductPage {
+export class CheckOutPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  clickCheckOut(){
-    this.navCtrl.setRoot(CheckOutPage);
+  goToCart(){
+    
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ProductPage');
+    console.log('ionViewDidLoad CheckOutPage');
   }
 
 }
