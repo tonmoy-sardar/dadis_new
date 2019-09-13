@@ -4,7 +4,6 @@ import { LoginPage  } from '../login/login';
 import { LoginButtonPage } from '../login-button/login-button';
 import { ProductPage } from '../product/product';
 import { ProductDetailPage } from '../product-detail/product-detail';
-import {CartPage} from '../cart/cart';
 
 @Component({
   selector: 'page-home',
@@ -27,10 +26,6 @@ export class HomePage {
   }
   productDetails(){
     this.navCtrl.setRoot(ProductDetailPage);
-  }
-  cart()
-  {
-    this.navCtrl.setRoot(CartPage);
   }
 
 }

@@ -17,6 +17,7 @@ export class CartPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
+  
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CartPage');
