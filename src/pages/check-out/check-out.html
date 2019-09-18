@@ -14,53 +14,126 @@
 
 <ion-content padding class="body-Css">
 
-  <div class="card" style="background-color: #615f5f;">
-    <ion-card-content>
-      <ion-item style="background-color: #615f5f; ">
-        <ion-thumbnail item-start>
-          <img src="/assets/imgs/b4.png" class="logo-field">
-        </ion-thumbnail>
-        <div>
-          <h4>Silver Pendant For Women</h4>
-        </div>
-      </ion-item>
-    </ion-card-content>
+  <div class="card" style="background-color:#535353; ">
+    <h4 style="color:white; float:left; font-size: 15px;">No. <span style="color:#ffbe0bf3;"> 568123</span></h4>
+    <ion-item style="background-color:#535353; ">
+      <ion-thumbnail item-left>
+        <img src="/assets/imgs/b4.png" class="logo-field">
+      </ion-thumbnail>
+      <h3 style="color: #ffffff; font-size:20px;">Silver Pendant</h3>
+      <h5 style="color:#ffbe0bf3">₹ 900.00</h5>
+      <h6 class="h6">The British use the term "header", but the American term "head-shot" the English simply refuse to
+        adopt
+      </h6>
+    </ion-item>
   </div>
   <div class="gap1"></div>
 
   <div>
     <h3 class="h3">Delivery address</h3>
   </div>
+
+  <div class="card" style="background-color: #535353;">
+    <ion-card-content>
+      <ion-item style="background-color: #535353; ">
+        <div>
+          <h5 style="color:#b4b2b2"> Billing Name </h5>
+        </div>
+      </ion-item>
+
+      <ion-item style="background-color: #535353; ">
+        <div>
+          <h5 style="color:#b4b2b2"> Apartment <span style="float: right; color:#b4b2b2;">ZIP </span> </h5>
+        </div>
+      </ion-item>
+
+     
+
+      <ion-item style="background-color: #535353; ">
+        <div>
+          <h5 style="color:#b4b2b2"> City <span style="float: right; color:#b4b2b2;">State </span> </h5>
+        </div>
+      </ion-item>
+
+
+      <ion-item style="background-color: #535353; ">
+        <div>
+          <h5 style="color:#b4b2b2"> Billing Address </h5>
+        </div>
+      </ion-item>
+
+    </ion-card-content>
+  </div>
   <div class="gap1"></div>
+
+  <div class="card" style="background-color: #535353;">
+      <ion-card-content>
+        <ion-item style="background-color: #535353; ">
+          <div>
+            <h5 style="color:#b4b2b2"> Subtotal <span style="color:#ffbe0bf3; float: right;">₹ 900.00</span></h5>
+          </div>
+        </ion-item>
+  
+        <ion-item style="background-color: #535353; ">
+          <div>
+            <h5 style="color:#b4b2b2"> GST <span style="color:#ffbe0bf3; float: right;">₹ 00.00</span></h5>
+          </div>
+        </ion-item>
+  
+        <ion-item style="background-color: #535353; ">
+          <div>
+            <h5 style="color:#b4b2b2"> Shipping <span style="color:#b4b2b2; float: right;">Free</span></h5>
+          </div>
+        </ion-item>
+  
+        <ion-item style="background-color: #535353; ">
+          <div>
+            <h5 style="color:#ffbe0bf3"> Total <span style="color:#ffbe0bf3; float: right;">₹ 900.00</span></h5>
+          </div>
+        </ion-item>
+  
+      </ion-card-content>
+    </div>
+    <div class="gap1"></div>  
+
 
   <div>
     <h3 class="h3">Payment Method</h3>
   </div>
   <div></div>
 
-  <div class="card" style="background-color: #615f5f;">
-      <ion-card-content>
-        <ion-item style="background-color: #615f5f; ">
-          <ion-thumbnail item-start>
-          </ion-thumbnail>
-          <div>
-           <span><h4>CARD</h4> <button style="background-color: #000000ef;"><h6 style="color: aliceblue">PAY</h6></button></span>
-            <span><h4>Paytm</h4> <button style="background-color: #000000ef;"><h6 style="color: aliceblue">PAY</h6></button></span>
-            <h4>COD</h4>
-            <!-- <div style="background-color: #ffffff; padding: 3px; width: 70px;">
-              <button style="background-color: #000000ef;">PAY</button> 
-            </div> -->
-          </div>
-        </ion-item>
+  <div class="card" style="background-color: #535353;">
+    <ion-card-content>
+      <ion-item style="background-color: #535353; ">
+        <div>
+          <h4 style="color:#b4b2b2"><img class="img-CardCss" src="/assets/imgs/atm.png"> CARD<span> <button class="button-Field">
+                <h6 style="color: aliceblue;">PAY</h6>
+              </button></span></h4>
+        </div>
+      </ion-item>
 
-        <div class="container">
-            <button class="checkout-button" (click)="goToCart()">
-              <h5>PROCEED TO PAY</h5>
-            </button>
-          </div>
+      <ion-item style="background-color: #535353; ">
+        <div>
+          <h4 style="color:#b4b2b2"><img class="img-CardCss" src="/assets/imgs/paytm.png"> Paytm<span> <button class="button-Field">
+                <h6 style="color: aliceblue;">PAY</h6>
+              </button></span></h4>
+        </div>
+      </ion-item>
 
-      </ion-card-content>
-    </div>
+      <ion-item style="background-color: #535353; ">
+        <div>
+          <h4 style="color:#b4b2b2">COD<span style="color:#ffbe0bf3; float: right;">₹ 900.00</span></h4>
+        </div>
+      </ion-item>
+
+      <div class="container">
+        <button class="checkout-button" (click)="goToCart()">
+          <h5>PROCEED TO PAY</h5>
+        </button>
+      </div>
+
+    </ion-card-content>
+  </div>
 
 
 
