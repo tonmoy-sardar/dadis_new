@@ -14,6 +14,7 @@ import { LoginButtonPage } from '../pages/login-button/login-button';
 import { ForgotPasswordPage } from '../pages/forgot-password/forgot-password';
 import { ProductPage } from '../pages/product/product';
 import { ProductDetailPage } from '../pages/product-detail/product-detail';
+import { OrderSuccessPage } from '../pages/order-success/order-success';
 
 import { CartPage } from '../pages/cart/cart';
 
@@ -37,7 +38,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProductPage,
     ProductDetailPage,
     CartPage,
-    CheckOutPage
+    CheckOutPage,
+    OrderSuccessPage
 
   ],
   imports: [
@@ -58,7 +60,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProductPage,
     ProductDetailPage,
     CartPage,
-    CheckOutPage
+    CheckOutPage,
+    OrderSuccessPage
 
   ],
   providers: [
