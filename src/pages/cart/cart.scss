@@ -4,29 +4,12 @@
     background-size: contain;
     background-color:#010000;
 }
-.nav-color{
-    background-color: #272727;
-    h1{
-        text-align: center;
-        color: #ffffff;
-        font-size: 22px;
-    }
-}
-.card-Css{
-        padding: 5px 5px 10px 10px;
-        font-size: 14px;
-
-}
 
 
 
-.h4{
-    color: #ffffff;
-}
-.h6{
-    color: #ffffff;
-    font-size: 22px;
-}
+
+
+
 .checkout-button{
     height: 50px;
     width: 300px;
@@ -44,12 +27,7 @@
     padding-right: 8px;
     border-bottom: 1px solid #817f7f;
 }
-.main-block
-{
-    width: 56px;
-    background-color: #ffffff;
-    float: right;
-}
+
 .cart-Css
 {
     .item-md 
@@ -63,35 +41,40 @@
 }
 // ion-avatar
 
-    .item   -md ion-avatar ion-img, .item-md ion-avatar img {
-        border-radius: 25%;
-        width: 99px;
-        height: 100px;
-        padding-top: 4px;
-    }
+.item-ios ion-avatar ion-img, .item-ios ion-avatar img {
+    border-radius: 25%;
+   
+    width: 99px;
+    height: 100px;
+    padding-top: 3px;
+}
 
     .cart-footer
     {
-        height: 160px;
+        height: 145px;
         background-color: #535353;
         text-align: center;
         border-radius: 7px;
     }
-    .price
+    .price-block
     {
         color: #ecb10dee;
         font-size:22px;
         text-align: center;
     }
-    .item-md.item-block .item-inner {
-        padding-right: 8px;
-        border-bottom: 0px solid #dedede;  
+    .item-ios {
+         padding-left: 0px;
+        padding-left: 0px;
+        background-color:#535353;
     }
-    ion-app.md [padding] .scroll-content {
-        padding: 6px;
-    }
-    item-md ion-avatar[item-left], .item-md ion-thumbnail[item-left], .item-md ion-avatar[item-start], .item-md ion-thumbnail[item-start] {
-        margin: 0px 0px 0px 0;
+    .product-price
+    {
+        color: #ffbe0bf3;
     }
 
-    
+    ion-app.ios [padding] .scroll-content {
+        padding: 6px;
+    }
+    item-ios ion-avatar[item-left], .item-ios ion-thumbnail[item-left], .item-ios ion-avatar[item-start], .item-ios ion-thumbnail[item-start] {
+        margin: 0px 0px 0px 0;
+    }
